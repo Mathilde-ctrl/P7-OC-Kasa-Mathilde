@@ -1,0 +1,6 @@
+@use '../utilities';
+
+body{
+  color: peru;
+  background-color: utilities.$neutral-first-color;
+}
