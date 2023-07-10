@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './sass/main.scss';
 
 import Home from './pages/Home';
 import Logement from './pages/Logement';
-import Header from './components/Header';
+import Layout from './components/layout';
 import APropos from './pages/a-propos';
 import PageErreur from './pages/erreur';
 
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <Header />
+      <Layout />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/Fiche-Logement' element={<Logement />} />

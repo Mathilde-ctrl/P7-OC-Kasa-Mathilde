@@ -1,3 +1,9 @@
 
-@forward 'layout';
-@forward 'utilities';
+//will look automaticly in the _index.scss file that is inside
+
+@forward 'layout';      //header,
+@forward 'utilities';   //variable
+@forward 'base';        //global-typography, reset,
+@forward 'components';  //buttons, 
+@forward 'pages';       //homepage,
+

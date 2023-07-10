@@ -1,6 +1,14 @@
-@use '../utilities';
 
-body{
-  color: peru;
-  background-color: utilities.$neutral-first-color;
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1240px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.header--link__2{
+  margin-left: 5.7rem;
 }

@@ -1,13 +1,14 @@
 
-function Home() {
+import Gallery from "./gallery";
+import Banner from "./banner";
+
+function Home(){
   return (
-    <div className="testsass">
-      Ma page principale est ici !!! 
+    <div>
+      <Banner />
+      <Gallery />
     </div>
-  );
+  )
 }
 
-
-
-export default Home 
- 
+export default Home
