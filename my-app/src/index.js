@@ -5,7 +5,6 @@ import './sass/main.scss';
 
 import Home from './pages/Home';
 import Logement from './pages/Logement';
-import Layout from './components/layout';
 import APropos from './pages/a-propos';
 import PageErreur from './pages/erreur';
 
@@ -13,7 +12,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <Layout />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/Fiche-Logement' element={<Logement />} />

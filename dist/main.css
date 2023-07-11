@@ -41,6 +41,50 @@ body {
   color: #ffffff;
 }
 
+.gallery--card__title {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.gallery {
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1240px;
+}
+.gallery .gallery--card {
+  margin: auto;
+  margin-top: 4.5rem;
+  width: 34rem;
+  height: 34rem;
+  position: relative;
+}
+.gallery .gallery--card .gallery--card__image {
+  width: 34rem;
+  height: 34rem;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .gallery--card .gallery--card__gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 1rem;
+  width: 34rem;
+  height: 34rem;
+}
+.gallery .gallery--card .gallery--card__title {
+  bottom: 0;
+  left: 3%;
+  position: absolute;
+  padding-right: 13.5rem;
+}
+
 .imageWelcomePageTitle {
   height: 22.3rem;
   width: 1240px;
