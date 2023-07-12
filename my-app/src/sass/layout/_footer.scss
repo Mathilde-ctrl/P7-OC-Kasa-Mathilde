@@ -1,0 +1,26 @@
+
+@use '../utilities';
+
+
+.footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  
+  .footer--bloc{
+    width: 1440px;
+    height: 20.9rem ;
+    background-color: utilities.$neutral-third-color;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer--image{
+    width: 12.2rem;
+    height: 3.9rem;
+  }
+}
+

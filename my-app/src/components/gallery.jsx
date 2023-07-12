@@ -1,26 +1,19 @@
 /**
- * @import advertData from JSON file 
- * advertData visible from the console.
+ * @import advertData du fichier advert.json  
+ * advertData est visible depuis la console.
  */
 import advertData from '../advert.json'
 console.log(advertData)
 
 /**
- * Vérifie le chemin des données
+ * @var string covers - récupère l'URL de l'image de couverture dans la propriété .cover de advertData
+ * @var string titles - récupère le titre de l'annonce dans la propriété .title de advertData
+ * 
+ * @returns image cover with title and gradient 
  */
-advertData.forEach(advert =>{
-
-  const advertTitle = advert.title;
-  const advertCover = advert.cover;
-
-console.log(advertTitle, advertCover)
-})
-
-
-
 function Gallery(){
   const covers = advertData.map(advert => advert.cover);
-  const titles = advertData.map(advert => advert.title )
+  const titles = advertData.map(advert => advert.title);
 
   return(
     <section>

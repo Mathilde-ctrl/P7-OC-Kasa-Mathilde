@@ -4,7 +4,7 @@ html{
   font-size: 62.5%;
 }
 
-body{ //reset against default style made by browsers
+.body--page{ //reset against default style made by browsers
   padding: 0;
   margin: auto;
   background-color: utilities.$neutral-first-color;

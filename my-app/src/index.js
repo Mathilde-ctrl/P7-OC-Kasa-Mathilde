@@ -17,7 +17,6 @@ root.render(
         <Route path='/Fiche-Logement' element={<Logement />} />
         <Route path='/A-Propos' element={<APropos />} />
         <Route path='*' element={<PageErreur />} />
-
       </Routes>
     </Router>
   </React.StrictMode>
