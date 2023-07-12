@@ -11,6 +11,14 @@
   width: 1240px;
   padding-bottom: 4.5rem;
 
+  @media(max-width: utilities.$query-mobile-value){
+    width: 33.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: utilities.$neutral-first-color;
+    padding-bottom: 0;
+  }
+
   .gallery--card{
     margin:auto;
     margin-top: 4.5rem;
@@ -19,8 +27,12 @@
     height: 34rem;
 
     position: relative;
-    
     cursor: pointer; 
+
+    @media(max-width: utilities.$query-mobile-value){
+      margin-top: 2rem;
+    }
+
 
     .gallery--card__image{
       width: 34rem;
@@ -36,9 +48,7 @@
       left: 0;
 
       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-
       border-radius: 1rem;
-      
       width: 34rem;
       height: 34rem;
     }

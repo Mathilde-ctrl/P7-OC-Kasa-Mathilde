@@ -1,14 +1,42 @@
-
+@use '../utilities';
+//----------------HEADER----------------
 
 .header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1240px;
+  width: 124rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
+
+  @media(max-width: utilities.$query-mobile-value){
+    width: 33.5rem;
+  }
+
+
+  &--logo{
+    width: 21rem;
+
+    @media (max-width: utilities.$query-mobile-value) {
+      width: 14.5rem; 
+    }
+  }
+
+
+  &--nav {
+    display: flex;
+  }
+
+
+  .header--link__2{
+    margin-left: 5.7rem;
+    text-decoration: none;
+
+    @media(max-width: utilities.$query-mobile-value){
+      margin-left: 3rem;
+      text-decoration: none;
+    }
+  }
 }
 
-.header--link__2{
-  margin-left: 5.7rem;
-}
+

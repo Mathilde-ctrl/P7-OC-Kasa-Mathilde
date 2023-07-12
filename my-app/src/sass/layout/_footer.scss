@@ -16,6 +16,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media(max-width: utilities.$query-mobile-value){
+      width: utilities.$query-mobile-value;
+    }
   }
   
   .footer--image{

@@ -2,13 +2,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1240px;
+  width: 124rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
-
-.header--link__2 {
+@media (max-width: 375.9px) {
+  .header {
+    width: 33.5rem;
+  }
+}
+.header--logo {
+  width: 21rem;
+}
+@media (max-width: 375.9px) {
+  .header--logo {
+    width: 14.5rem;
+  }
+}
+.header--nav {
+  display: flex;
+}
+.header .header--link__2 {
   margin-left: 5.7rem;
+  text-decoration: none;
+}
+@media (max-width: 375.9px) {
+  .header .header--link__2 {
+    margin-left: 3rem;
+    text-decoration: none;
+  }
 }
 
 .footer {
@@ -25,6 +47,11 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 375.9px) {
+  .footer .footer--bloc {
+    width: 375.9px;
+  }
+}
 .footer .footer--image {
   width: 12.2rem;
   height: 3.9rem;
@@ -40,24 +67,37 @@ html {
   background-color: #ffffff;
   width: 1240px;
 }
+@media (max-width: 375.9px) {
+  .body--page {
+    width: 33.5rem;
+  }
+}
 
 .header {
   font-family: "Montserrat";
   font-size: 2.4rem;
   font-weight: 500;
 }
+@media (max-width: 375.9px) {
+  .header {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
 .header .header--link__1, .header .header--link__2 {
   color: #FF6060;
 }
-.header .header--link__2 {
-  text-decoration: none;
-}
 
-.imageWelcomePageTitle {
+.welcome--title {
   font-family: "Montserrat";
   font-size: 4.8rem;
   font-weight: 500;
   color: #ffffff;
+}
+@media (max-width: 375.9px) {
+  .welcome--title {
+    font-size: 2.4rem;
+  }
 }
 
 .gallery--card__title {
@@ -73,6 +113,15 @@ html {
   font-size: 2.4rem;
   color: #ffffff;
 }
+@media (max-width: 375.9px) {
+  .footer--texte {
+    font-size: 1.2rem;
+    width: 8.4rem;
+    text-align: justify;
+    -moz-text-align-last: justify;
+         text-align-last: justify;
+  }
+}
 
 .gallery {
   background-color: #F6F6F6;
@@ -82,6 +131,15 @@ html {
   width: 1240px;
   padding-bottom: 4.5rem;
 }
+@media (max-width: 375.9px) {
+  .gallery {
+    width: 33.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding-bottom: 0;
+  }
+}
 .gallery .gallery--card {
   margin: auto;
   margin-top: 4.5rem;
@@ -89,6 +147,11 @@ html {
   height: 34rem;
   position: relative;
   cursor: pointer;
+}
+@media (max-width: 375.9px) {
+  .gallery .gallery--card {
+    margin-top: 2rem;
+  }
 }
 .gallery .gallery--card .gallery--card__image {
   width: 34rem;
@@ -113,16 +176,7 @@ html {
   padding-right: 13.5rem;
 }
 
-.imageWelcomePageTitle {
-  height: 22.3rem;
-  width: 1240px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.imageWelcomePage {
+.welcome--image {
   height: 22.3rem;
   width: 1240px;
   border-radius: 2.5rem;
@@ -130,12 +184,42 @@ html {
      object-fit: cover;
   position: absolute;
 }
-
-.imageWelcomeBanner {
+@media (max-width: 375.9px) {
+  .welcome--image {
+    width: 33.5rem;
+    height: 11.1rem;
+    border-radius: 1rem;
+    -o-object-position: 0% 55%;
+       object-position: 0% 55%;
+  }
+}
+.welcome--banner {
   height: 22.3rem;
   width: 1240px;
   border-radius: 2.5rem;
   background-color: #000000;
   opacity: 30%;
   position: absolute;
+}
+@media (max-width: 375.9px) {
+  .welcome--banner {
+    width: 33.5rem;
+    height: 11.1rem;
+    border-radius: 1rem;
+  }
+}
+.welcome--title {
+  height: 22.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 375.9px) {
+  .welcome--title {
+    width: 19rem;
+    height: 11.1rem;
+    margin-bottom: 0;
+    padding-left: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
