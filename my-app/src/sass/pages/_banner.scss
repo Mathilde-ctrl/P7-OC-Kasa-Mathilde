@@ -1,11 +1,22 @@
 @use '../utilities';
 
+
 .welcome{
-  
+  height:22.3rem ;
+  position: relative;
+  margin-bottom: 4.5rem;
+
+  @media(max-width: utilities.$query-mobile-value){
+    margin-bottom: 0;
+    height: 11.1rem ;
+  }
+
+
   &--image{
     height: 22.3rem;
     width: 1240px;
     border-radius: 2.5rem;
+
     object-fit: cover;
     position: absolute;
   
@@ -14,9 +25,9 @@
       height: 11.1rem;
       border-radius: 1rem;
       object-position: 0% 55%;
-      
     }
   }
+
 
   &--banner{
     height: 22.3rem;
@@ -35,27 +46,33 @@
     }
   }
 
+
   &--title{
     height: 22.3rem;
-  
+    width: 1240px; 
+    margin-top: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    position: relative;
+    position: absolute;
     
     @media(max-width: utilities.$query-mobile-value){
       width: 19rem;
       height: 11.1rem;
       margin-bottom: 0;
       padding-left: 2rem;
-
     }
   }
 }
 
 
-
+.welcome--apropos{
+  height: 22.3rem;
+  @media (max-width: utilities.$query-mobile-value) {
+    height: 22.3rem;
+  }
+}
 
 
 

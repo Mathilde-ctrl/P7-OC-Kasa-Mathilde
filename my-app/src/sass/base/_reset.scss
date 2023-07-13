@@ -9,9 +9,12 @@ html{
   margin: auto;
   background-color: utilities.$neutral-first-color;
   width: 1240px;
+  height: 100%;
+  
   
   @media(max-width: utilities.$query-mobile-value){
     width: 33.5rem ;
 
   }
 }
+

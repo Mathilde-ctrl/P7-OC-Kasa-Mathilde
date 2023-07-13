@@ -22,14 +22,21 @@
 .header--nav {
   display: flex;
 }
-.header .header--link__2 {
-  margin-left: 5.7rem;
+.header #header--link__1.active {
+  text-decoration: underline;
+}
+.header #header--link__2.active {
+  text-decoration: underline;
+}
+.header #header--link__1, .header #header--link__2 {
   text-decoration: none;
 }
+.header #header--link__2 {
+  margin-left: 5.7rem;
+}
 @media (max-width: 375.9px) {
-  .header .header--link__2 {
+  .header #header--link__2 {
     margin-left: 3rem;
-    text-decoration: none;
   }
 }
 
@@ -37,6 +44,7 @@
   display: flex;
   justify-content: center;
   margin-top: 5rem;
+  width: 100%;
 }
 .footer .footer--bloc {
   width: 1440px;
@@ -66,6 +74,7 @@ html {
   margin: auto;
   background-color: #ffffff;
   width: 1240px;
+  height: 100%;
 }
 @media (max-width: 375.9px) {
   .body--page {
@@ -84,7 +93,7 @@ html {
     text-transform: uppercase;
   }
 }
-.header .header--link__1, .header .header--link__2 {
+.header #header--link__1, .header #header--link__2 {
   color: #FF6060;
 }
 
@@ -151,6 +160,8 @@ html {
 @media (max-width: 375.9px) {
   .gallery .gallery--card {
     margin-top: 2rem;
+    width: 33.5rem;
+    height: 33.5rem;
   }
 }
 .gallery .gallery--card .gallery--card__image {
@@ -159,6 +170,12 @@ html {
   border-radius: 1rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 375.9px) {
+  .gallery .gallery--card .gallery--card__image {
+    width: 33.5rem;
+    height: 33.5rem;
+  }
 }
 .gallery .gallery--card .gallery--card__gradient {
   position: absolute;
@@ -176,6 +193,17 @@ html {
   padding-right: 13.5rem;
 }
 
+.welcome {
+  height: 22.3rem;
+  position: relative;
+  margin-bottom: 4.5rem;
+}
+@media (max-width: 375.9px) {
+  .welcome {
+    margin-bottom: 0;
+    height: 11.1rem;
+  }
+}
 .welcome--image {
   height: 22.3rem;
   width: 1240px;
@@ -210,10 +238,12 @@ html {
 }
 .welcome--title {
   height: 22.3rem;
+  width: 1240px;
+  margin-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
 }
 @media (max-width: 375.9px) {
   .welcome--title {
@@ -221,5 +251,14 @@ html {
     height: 11.1rem;
     margin-bottom: 0;
     padding-left: 2rem;
+  }
+}
+
+.welcome--apropos {
+  height: 22.3rem;
+}
+@media (max-width: 375.9px) {
+  .welcome--apropos {
+    height: 22.3rem;
   }
 }/*# sourceMappingURL=main.css.map */

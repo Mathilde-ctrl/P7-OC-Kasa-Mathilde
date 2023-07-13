@@ -22,19 +22,26 @@
     }
   }
 
-
   &--nav {
     display: flex;
   }
 
+  #header--link__1.active{
+    text-decoration: underline;
+  } 
+  #header--link__2.active{
+    text-decoration: underline;
+  }
 
-  .header--link__2{
-    margin-left: 5.7rem;
+  #header--link__1, #header--link__2{
     text-decoration: none;
+  }
+
+  #header--link__2{
+    margin-left: 5.7rem;
 
     @media(max-width: utilities.$query-mobile-value){
       margin-left: 3rem;
-      text-decoration: none;
     }
   }
 }
