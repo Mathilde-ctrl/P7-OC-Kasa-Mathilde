@@ -11,9 +11,9 @@
   }
   #header--link__1, #header--link__2{
     color:utilities.$main-color;
-  
   }
 }
+
 
 .welcome--title{
   font-family: 'Montserrat';
@@ -26,6 +26,7 @@
   }
 }
 
+
 .gallery--card__title{
   font-family: 'Montserrat';
   font-weight: 500;
@@ -33,6 +34,7 @@
   color: utilities.$neutral-first-color;
 
 }
+
 
 .footer--texte{
   font-family: 'Montserrat';
@@ -42,8 +44,23 @@
 
   @media(max-width: utilities.$query-mobile-value){
     font-size: 1.2rem;
-    width: 8.4rem;
+    width: 10rem;
     text-align:justify;
     text-align-last:justify ;
   }
+}
+
+
+.collapse--title{
+  font-family: 'Montserrat';
+  font-size: 2.4rem;
+  color: utilities.$neutral-first-color;
+  font-weight: 500;
+}
+
+.collapse--content{
+  font-family: 'Montserrat';
+  font-size: 1.8rem;
+  color: utilities.$main-color;
+  font-weight: 400;
 }

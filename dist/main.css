@@ -65,134 +65,6 @@
   height: 3.9rem;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-.body--page {
-  padding: 0;
-  margin: auto;
-  background-color: #ffffff;
-  width: 1240px;
-  height: 100%;
-}
-@media (max-width: 375.9px) {
-  .body--page {
-    width: 33.5rem;
-  }
-}
-
-.header {
-  font-family: "Montserrat";
-  font-size: 2.4rem;
-  font-weight: 500;
-}
-@media (max-width: 375.9px) {
-  .header {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-  }
-}
-.header #header--link__1, .header #header--link__2 {
-  color: #FF6060;
-}
-
-.welcome--title {
-  font-family: "Montserrat";
-  font-size: 4.8rem;
-  font-weight: 500;
-  color: #ffffff;
-}
-@media (max-width: 375.9px) {
-  .welcome--title {
-    font-size: 2.4rem;
-  }
-}
-
-.gallery--card__title {
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-size: 1.8rem;
-  color: #ffffff;
-}
-
-.footer--texte {
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-size: 2.4rem;
-  color: #ffffff;
-}
-@media (max-width: 375.9px) {
-  .footer--texte {
-    font-size: 1.2rem;
-    width: 8.4rem;
-    text-align: justify;
-    -moz-text-align-last: justify;
-         text-align-last: justify;
-  }
-}
-
-.gallery {
-  background-color: #F6F6F6;
-  border-radius: 25px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1240px;
-  padding-bottom: 4.5rem;
-}
-@media (max-width: 375.9px) {
-  .gallery {
-    width: 33.5rem;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    padding-bottom: 0;
-  }
-}
-.gallery .gallery--card {
-  margin: auto;
-  margin-top: 4.5rem;
-  width: 34rem;
-  height: 34rem;
-  position: relative;
-  cursor: pointer;
-}
-@media (max-width: 375.9px) {
-  .gallery .gallery--card {
-    margin-top: 2rem;
-    width: 33.5rem;
-    height: 33.5rem;
-  }
-}
-.gallery .gallery--card .gallery--card__image {
-  width: 34rem;
-  height: 34rem;
-  border-radius: 1rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media (max-width: 375.9px) {
-  .gallery .gallery--card .gallery--card__image {
-    width: 33.5rem;
-    height: 33.5rem;
-  }
-}
-.gallery .gallery--card .gallery--card__gradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  border-radius: 1rem;
-  width: 34rem;
-  height: 34rem;
-}
-.gallery .gallery--card .gallery--card__title {
-  bottom: 0;
-  left: 3%;
-  position: absolute;
-  padding-right: 13.5rem;
-}
-
 .welcome {
   height: 22.3rem;
   position: relative;
@@ -260,5 +132,198 @@ html {
 @media (max-width: 375.9px) {
   .welcome--apropos {
     height: 22.3rem;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.body--page {
+  padding: 0;
+  margin: auto;
+  background-color: #ffffff;
+  width: 1240px;
+  height: 100%;
+}
+@media (max-width: 375.9px) {
+  .body--page {
+    width: 33.5rem;
+  }
+}
+
+.header {
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+@media (max-width: 375.9px) {
+  .header {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
+.header #header--link__1, .header #header--link__2 {
+  color: #FF6060;
+}
+
+.welcome--title {
+  font-family: "Montserrat";
+  font-size: 4.8rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+@media (max-width: 375.9px) {
+  .welcome--title {
+    font-size: 2.4rem;
+  }
+}
+
+.gallery--card__title {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.footer--texte {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+@media (max-width: 375.9px) {
+  .footer--texte {
+    font-size: 1.2rem;
+    width: 10rem;
+    text-align: justify;
+    -moz-text-align-last: justify;
+         text-align-last: justify;
+  }
+}
+
+.collapse--title {
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.collapse--content {
+  font-family: "Montserrat";
+  font-size: 1.8rem;
+  color: #FF6060;
+  font-weight: 400;
+}
+
+.gallery {
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1240px;
+  padding-bottom: 4.5rem;
+}
+@media (max-width: 375.9px) {
+  .gallery {
+    width: 33.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding-bottom: 0;
+  }
+}
+.gallery .gallery--card {
+  margin: auto;
+  margin-top: 4.5rem;
+  width: 34rem;
+  height: 34rem;
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width: 375.9px) {
+  .gallery .gallery--card {
+    margin-top: 2rem;
+    width: 33.5rem;
+    height: 33.5rem;
+  }
+}
+.gallery .gallery--card .gallery--card__image {
+  width: 34rem;
+  height: 34rem;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 375.9px) {
+  .gallery .gallery--card .gallery--card__image {
+    width: 33.5rem;
+    height: 33.5rem;
+  }
+}
+.gallery .gallery--card .gallery--card__gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 1rem;
+  width: 34rem;
+  height: 34rem;
+}
+.gallery .gallery--card .gallery--card__title {
+  bottom: 0;
+  left: 3%;
+  position: absolute;
+  padding-right: 13.5rem;
+}
+
+.collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+@media (max-width: 375.9px) {
+  .collapse {
+    margin-top: 3rem;
+  }
+}
+.collapse .collapse--title {
+  width: 102.3rem;
+  height: 5.2rem;
+  padding-left: 1.5rem;
+  padding-right: 3.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #FF6060;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 375.9px) {
+  .collapse .collapse--title {
+    width: 33.5rem;
+  }
+}
+.collapse .collapse--title .collapse--title__icon {
+  border-top: #ffffff 0.5rem solid;
+  border-left: #ffffff 0.5rem solid;
+  border-radius: 0.5rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  rotate: 45deg;
+  margin-top: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+.collapse .collapse--content {
+  width: 102.3rem;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  background-color: #F6F6F6;
+}
+@media (max-width: 375.9px) {
+  .collapse .collapse--content {
+    width: 33.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
