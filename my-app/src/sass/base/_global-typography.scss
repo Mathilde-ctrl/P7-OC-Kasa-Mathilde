@@ -56,6 +56,10 @@
   font-size: 2.4rem;
   color: utilities.$neutral-first-color;
   font-weight: 500;
+
+  @media(max-width: utilities.$query-mobile-value){
+    font-size: 1.3rem;
+  }
 }
 
 .collapse--content{
@@ -63,6 +67,10 @@
   font-size: 1.8rem;
   color: utilities.$main-color;
   font-weight: 400;
+
+  @media(max-width: utilities.$query-mobile-value){
+    font-size: 1.3rem;
+  }
 }
 
 .error{

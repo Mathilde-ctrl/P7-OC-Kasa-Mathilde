@@ -38,12 +38,12 @@ function Collapse({title, text }){
 
 
   return (
-    <div className="collapse">
+    <div className={`collapse ${isCollapsed ? "close" : "open"}`}>
       <button className="collapse--title" onClick={toggleCollapse}>
         {title} 
-        <div className={`collapse--title__icon ${isRotated ? 'rotate' : ''}`}></div>
+        <i className={`collapse--title__icon ${isRotated ? 'rotate' : ''}`}></i>
       </button>
-    <div className={`collapse--content ${isCollapsed ? "" : "open"}`}>{text}</div>
+      <p className="collapse--content">{text}</p>
     </div>
   );
 }

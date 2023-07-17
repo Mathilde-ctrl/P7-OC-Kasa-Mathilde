@@ -46,6 +46,11 @@
   margin-top: 5rem;
   width: 100%;
 }
+@media (max-width: 375.9px) {
+  .footer {
+    margin-top: 2rem;
+  }
+}
 .footer .footer--bloc {
   width: 1440px;
   height: 20.9rem;
@@ -72,7 +77,7 @@
 }
 @media (max-width: 375.9px) {
   .welcome {
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
     height: 11.1rem;
   }
 }
@@ -208,12 +213,22 @@ html {
   color: #ffffff;
   font-weight: 500;
 }
+@media (max-width: 375.9px) {
+  .collapse--title {
+    font-size: 1.3rem;
+  }
+}
 
 .collapse--content {
   font-family: "Montserrat";
   font-size: 1.8rem;
   color: #FF6060;
   font-weight: 400;
+}
+@media (max-width: 375.9px) {
+  .collapse--content {
+    font-size: 1.3rem;
+  }
 }
 
 .error {
@@ -301,8 +316,8 @@ html {
   left: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   border-radius: 1rem;
-  width: 34rem;
-  height: 34rem;
+  width: 33.5rem;
+  height: 33.54rem;
 }
 .gallery .gallery--card .gallery--card__title {
   bottom: 0;
@@ -315,11 +330,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-@media (max-width: 375.9px) {
-  .collapse {
-    margin-top: 3rem;
-  }
 }
 .collapse .collapse--title {
   width: 102.3rem;
@@ -336,6 +346,7 @@ html {
 @media (max-width: 375.9px) {
   .collapse .collapse--title {
     width: 33.5rem;
+    height: 3rem;
   }
 }
 .collapse .collapse--title .collapse--title__icon {
@@ -348,30 +359,46 @@ html {
   rotate: 45deg;
   transition: transform 0.3s ease-out;
 }
+@media (max-width: 375.9px) {
+  .collapse .collapse--title .collapse--title__icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    border-top: #ffffff 0.3rem solid;
+    border-left: #ffffff 0.3rem solid;
+    border-radius: 15%;
+  }
+}
 .collapse .collapse--title .rotate {
   transform: rotate(-180deg);
 }
 .collapse .collapse--content {
   width: 102.3rem;
+  height: 0;
   border-radius: 0.5rem;
   padding: 1.5rem;
   margin-bottom: 0;
+  margin-top: 0;
   box-sizing: border-box;
   background-color: #F6F6F6;
-  transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out;
+  transition: transform 0.25s ease, margin-bottom 0.35s ease-out;
   transform: scaleY(0);
   transform-origin: top;
-  height: 0;
 }
 @media (max-width: 375.9px) {
   .collapse .collapse--content {
     width: 33.5rem;
   }
 }
-.collapse .collapse--content.open {
+
+.collapse.open .collapse--content {
   transform: scaleY(1);
   height: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.collapse.close .collapse--content {
+  margin-bottom: -10px;
 }
 
 .error {

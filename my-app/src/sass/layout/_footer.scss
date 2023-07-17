@@ -9,6 +9,10 @@
 
   width: 100%;
   
+  @media(max-width: utilities.$query-mobile-value){
+    margin-top: 2rem;
+  }
+
   .footer--bloc{
     width: 1440px;
     height: 20.9rem ;
