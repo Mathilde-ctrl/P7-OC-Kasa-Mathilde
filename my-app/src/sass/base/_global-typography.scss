@@ -64,3 +64,37 @@
   color: utilities.$main-color;
   font-weight: 400;
 }
+
+.error{
+  color: utilities.$main-color;
+  font-family: 'Montserrat';
+
+  .error--code{
+    font-weight: 700;
+    font-size: 28.8rem;
+
+    @media(max-width: utilities.$query-mobile-value){
+      font-size: 9.6rem;
+    }
+  }
+  
+  .error--message{
+    font-weight: 500;
+    font-size: 3.6rem;
+
+    @media(max-width: utilities.$query-mobile-value){
+      font-size: 1.8rem;
+    }
+  }
+  
+  .error--link{
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    color: utilities.$main-color;
+
+    @media(max-width: utilities.$query-mobile-value){
+      font-size: 1.4rem;
+    }
+  }
+}

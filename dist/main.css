@@ -216,6 +216,40 @@ html {
   font-weight: 400;
 }
 
+.error {
+  color: #FF6060;
+  font-family: "Montserrat";
+}
+.error .error--code {
+  font-weight: 700;
+  font-size: 28.8rem;
+}
+@media (max-width: 375.9px) {
+  .error .error--code {
+    font-size: 9.6rem;
+  }
+}
+.error .error--message {
+  font-weight: 500;
+  font-size: 3.6rem;
+}
+@media (max-width: 375.9px) {
+  .error .error--message {
+    font-size: 1.8rem;
+  }
+}
+.error .error--link {
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  color: #FF6060;
+}
+@media (max-width: 375.9px) {
+  .error .error--link {
+    font-size: 1.4rem;
+  }
+}
+
 .gallery {
   background-color: #F6F6F6;
   border-radius: 25px;
@@ -281,7 +315,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3rem;
 }
 @media (max-width: 375.9px) {
   .collapse {
@@ -309,21 +342,50 @@ html {
   border-top: #ffffff 0.5rem solid;
   border-left: #ffffff 0.5rem solid;
   border-radius: 0.5rem;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-top: 0.5rem;
   rotate: 45deg;
-  margin-top: 1rem;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-out;
+}
+.collapse .collapse--title .rotate {
+  transform: rotate(-180deg);
 }
 .collapse .collapse--content {
   width: 102.3rem;
   border-radius: 0.5rem;
   padding: 1.5rem;
+  margin-bottom: 0;
   box-sizing: border-box;
   background-color: #F6F6F6;
+  transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 0;
 }
 @media (max-width: 375.9px) {
   .collapse .collapse--content {
     width: 33.5rem;
   }
+}
+.collapse .collapse--content.open {
+  transform: scaleY(1);
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error .error--code {
+  margin: 0 0 5rem;
+}
+.error .error--message {
+  margin: 0 0 9rem;
+  text-align: center;
+}
+.error .error--link {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
