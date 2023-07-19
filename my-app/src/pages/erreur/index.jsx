@@ -2,7 +2,7 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import Error from "../../components/error";
 
-function PageErreur(){
+function ErrorPage(){
   return(
     <div>
       <section className="body--page">
@@ -14,4 +14,4 @@ function PageErreur(){
   )
 }
 
-export default PageErreur
+export default ErrorPage

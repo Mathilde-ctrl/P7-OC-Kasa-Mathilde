@@ -4,7 +4,7 @@ import Footer from "../../components/footer";
 import image2 from "../../images/Image source 2.png"
 import Collapse from "../../components/collapse";
 
-function APropos(){
+function AboutPage(){
   return(
     <div>
       <section className="body--page">
@@ -48,4 +48,4 @@ function APropos(){
   )
 }
 
-export default APropos
+export default AboutPage

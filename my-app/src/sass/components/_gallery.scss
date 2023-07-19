@@ -54,10 +54,16 @@
       top: 0;
       left: 0;
 
+      width: 34rem;
+      height: 34rem;
+
       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
       border-radius: 1rem;
-      width: 33.5rem;
-      height: 33.54rem;
+
+      @media(max-width: utilities.$query-mobile-value){
+        width: 33.5rem;
+        height: 33.5rem;
+      }
       
     }
 

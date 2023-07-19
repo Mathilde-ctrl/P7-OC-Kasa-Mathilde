@@ -124,7 +124,7 @@
 }
 @media (max-width: 375.9px) {
   .welcome--title {
-    width: 19rem;
+    width: 22rem;
     height: 11.1rem;
     margin-bottom: 0;
     padding-left: 2rem;
@@ -265,6 +265,13 @@ html {
   }
 }
 
+.count {
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
 .gallery {
   background-color: #F6F6F6;
   border-radius: 25px;
@@ -314,10 +321,16 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  width: 34rem;
+  height: 34rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   border-radius: 1rem;
-  width: 33.5rem;
-  height: 33.54rem;
+}
+@media (max-width: 375.9px) {
+  .gallery .gallery--card .gallery--card__gradient {
+    width: 33.5rem;
+    height: 33.5rem;
+  }
 }
 .gallery .gallery--card .gallery--card__title {
   bottom: 0;
@@ -415,4 +428,116 @@ html {
 }
 .error .error--link {
   margin: 0;
+}
+
+.slideTools {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 25rem;
+  padding: 2rem;
+}
+@media (max-width: 375.9px) {
+  .slideTools {
+    bottom: 15rem;
+    padding: 1rem;
+  }
+}
+
+.arrow {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+@media (max-width: 375.9px) {
+  .arrow {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+}
+
+.arrow--left {
+  border-top: #ffffff 0.7rem solid;
+  border-left: #ffffff 0.7rem solid;
+  rotate: -45deg;
+}
+@media (max-width: 375.9px) {
+  .arrow--left {
+    border-width: 0.3rem;
+  }
+}
+
+.arrow--right {
+  border-top: #ffffff 0.7rem solid;
+  border-right: #ffffff 0.7rem solid;
+  rotate: 45deg;
+}
+@media (max-width: 375.9px) {
+  .arrow--right {
+    border-width: 0.3rem;
+  }
+}
+
+.carousel {
+  width: 124rem;
+  height: 41.5rem;
+  overflow: hidden;
+  position: relative;
+  /*
+    .carousel--image{
+      display: none;
+      transition: transform 0.5s ease-out;
+      transform: translateX(-100%);
+    }
+  */
+}
+@media (max-width: 375.9px) {
+  .carousel {
+    width: 33.5rem;
+    height: 25.5rem;
+  }
+}
+.carousel .carousel--image {
+  position: absolute;
+  opacity: 0;
+}
+.carousel .carousel--image.visible {
+  display: flex;
+  width: 124rem;
+  height: 41.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation-name: fadeInOut;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+@media (max-width: 375.9px) {
+  .carousel .carousel--image.visible {
+    width: 33.5rem;
+    height: 25.5rem;
+  }
+}
+
+.count {
+  text-align: center;
+  position: relative;
+  bottom: 14rem;
+}
+@media (max-width: 375.9px) {
+  .count {
+    display: none;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=main.css.map */

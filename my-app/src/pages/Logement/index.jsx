@@ -1,12 +1,17 @@
+import Header from '../../components/header'
+import Footer from '../../components/footer'
+import Carousel from '../../components/carousel'
 
-
-
-function Logement(){
+function Housing(){
   return(
     <div>
-      Ma page avec la description du logement. 
+      <section className="body--page">
+        <Header />
+        <Carousel />
+      </section>
+      <Footer />
     </div>
   )
 }
 
-export default Logement
+export default Housing
