@@ -1,5 +1,5 @@
 @use '../utilities';
-
+//-----------------HEADER-----------------//
 .header{
   font-family: 'Montserrat';
   font-size: 2.4rem;
@@ -14,7 +14,7 @@
   }
 }
 
-
+//-----------------BANNER-----------------//
 .welcome--title{
   font-family: 'Montserrat';
   font-size: 4.8rem;
@@ -26,6 +26,7 @@
   }
 }
 
+//-----------------GALLERY-----------------//
 
 .gallery--card__title{
   font-family: 'Montserrat';
@@ -35,7 +36,7 @@
 
 }
 
-
+//-----------------FOOTER-----------------//
 .footer--texte{
   font-family: 'Montserrat';
   font-weight: 500;
@@ -50,7 +51,7 @@
   }
 }
 
-
+//-----------------COLLAPSE-----------------//
 .collapse--title{
   font-family: 'Montserrat';
   font-size: 2.4rem;
@@ -73,6 +74,7 @@
   }
 }
 
+//-----------------PAGE ERROR-----------------//
 .error{
   color: utilities.$main-color;
   font-family: 'Montserrat';
@@ -107,9 +109,57 @@
   }
 }
 
+//-----------------CAROUSEL -----------------//
 .count{
   color: utilities.$neutral-first-color;
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 1.8rem;
 }
+
+
+//-----------------INFORMATION -----------------//
+.information--title{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 3.6rem;
+  color: utilities.$main-color;
+
+  @media(max-width: utilities.$query-mobile-value){
+    font-size: 1.8rem;
+  }
+}
+
+.information--location{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: utilities.$main-color;
+
+  @media(max-width: utilities.$query-mobile-value){
+    font-size: 1.4rem;
+  }
+}
+
+.information--host__name{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: utilities.$main-color;
+
+  @media(max-width: utilities.$query-mobile-value){
+    font-size: 1.2rem;
+  }
+}
+
+.information--tags{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: utilities.$neutral-first-color;
+
+  @media(max-width: utilities.$query-mobile-value){
+    font-size: 1rem;
+  }
+}
+

@@ -1,5 +1,9 @@
 @use './../utilities';
 
+.tools{
+  height: 0;
+}
+
 .slideTools{
   display: flex;
   justify-content: space-between;
@@ -55,17 +59,10 @@
     width:33.5rem ;
     height: 25.5rem;
   }
-/*
-  .carousel--image{
-    display: none;
-    transition: transform 0.5s ease-out;
-    transform: translateX(-100%);
-  }
-*/
+
 .carousel--image {
   position: absolute;
   opacity: 0;
-  
 }
 
   .carousel--image.visible{
@@ -78,6 +75,7 @@
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     opacity: 1;
+    border-radius: 2.5rem;
    
 
     @media(max-width: utilities.$query-mobile-value){
@@ -86,6 +84,13 @@
     }
   }
 }
+
+@keyframes fadeInOut {
+  0%{ opacity: 0.5;} 
+  100% { opacity: 1;} 
+}
+
+
 
 .count{
   text-align: center;
@@ -97,8 +102,3 @@
   }
 }
 
-@keyframes fadeInOut {
-  0%{ opacity: 0.3;   } 
-  40%{ opacity: 0.7;  }
-  100% { opacity: 1;  } 
-}

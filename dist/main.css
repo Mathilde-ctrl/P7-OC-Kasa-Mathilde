@@ -44,7 +44,6 @@
   display: flex;
   justify-content: center;
   margin-top: 5rem;
-  width: 100%;
 }
 @media (max-width: 375.9px) {
   .footer {
@@ -272,6 +271,54 @@ html {
   font-size: 1.8rem;
 }
 
+.information--title {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 3.6rem;
+  color: #FF6060;
+}
+@media (max-width: 375.9px) {
+  .information--title {
+    font-size: 1.8rem;
+  }
+}
+
+.information--location {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #FF6060;
+}
+@media (max-width: 375.9px) {
+  .information--location {
+    font-size: 1.4rem;
+  }
+}
+
+.information--host__name {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #FF6060;
+}
+@media (max-width: 375.9px) {
+  .information--host__name {
+    font-size: 1.2rem;
+  }
+}
+
+.information--tags {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+@media (max-width: 375.9px) {
+  .information--tags {
+    font-size: 1rem;
+  }
+}
+
 .gallery {
   background-color: #F6F6F6;
   border-radius: 25px;
@@ -339,11 +386,6 @@ html {
   padding-right: 13.5rem;
 }
 
-.collapse {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .collapse .collapse--title {
   width: 102.3rem;
   height: 5.2rem;
@@ -430,6 +472,10 @@ html {
   margin: 0;
 }
 
+.tools {
+  height: 0;
+}
+
 .slideTools {
   display: flex;
   justify-content: space-between;
@@ -482,13 +528,6 @@ html {
   height: 41.5rem;
   overflow: hidden;
   position: relative;
-  /*
-    .carousel--image{
-      display: none;
-      transition: transform 0.5s ease-out;
-      transform: translateX(-100%);
-    }
-  */
 }
 @media (max-width: 375.9px) {
   .carousel {
@@ -511,6 +550,7 @@ html {
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
   opacity: 1;
+  border-radius: 2.5rem;
 }
 @media (max-width: 375.9px) {
   .carousel .carousel--image.visible {
@@ -519,6 +559,14 @@ html {
   }
 }
 
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .count {
   text-align: center;
   position: relative;
@@ -530,14 +578,170 @@ html {
   }
 }
 
-@keyframes fadeInOut {
-  0% {
-    opacity: 0.3;
+.information {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 13rem;
+}
+@media (max-width: 375.9px) {
+  .information {
+    margin-top: 1rem;
+    margin-bottom: 1.6rem;
   }
-  40% {
-    opacity: 0.7;
+}
+.information .information--text {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.information .information--text .information--title {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+.information .information--text .information--location {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+.information .information--text .information--tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+@media (max-width: 375.9px) {
+  .information .information--text .information--tags {
+    margin-top: 0.5rem;
   }
-  100% {
-    opacity: 1;
+}
+.information .information--text .information--tags .information--tags__tag {
+  background-color: #FF6060;
+  padding: 0.5rem 2.4rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 375.9px) {
+  .information .information--text .information--tags .information--tags__tag {
+    height: 1.8rem;
+    padding: 0.1rem 1rem;
+    margin-bottom: 0.4rem;
+    margin-right: 0.4rem;
+  }
+}
+.information .information--host--rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  bottom: 12rem;
+}
+@media (max-width: 375.9px) {
+  .information .information--host--rating {
+    top: 0rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+.information .information--host--rating .information--host {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+@media (max-width: 375.9px) {
+  .information .information--host--rating .information--host {
+    margin-bottom: 0;
+  }
+}
+.information .information--host--rating .information--host .information--host__name {
+  text-align: right;
+  margin: 0;
+  padding-right: 1rem;
+  width: 9rem;
+}
+@media (max-width: 375.9px) {
+  .information .information--host--rating .information--host .information--host__name {
+    width: 6rem;
+  }
+}
+.information .information--host--rating .information--host .information--host__picture {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 5rem;
+}
+@media (max-width: 375.9px) {
+  .information .information--host--rating .information--host .information--host__picture {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+.information .information--host--rating .information--rating {
+  display: flex;
+  justify-content: flex-end;
+  color: #C4C4C4;
+}
+@media (max-width: 375.9px) {
+  .information .information--host--rating .information--rating {
+    justify-content: flex-start;
+  }
+}
+.information .information--host--rating .information--rating .active {
+  color: #FF6060;
+  padding-right: 1rem;
+}
+.information .information--host--rating .information--rating .neutral {
+  padding-right: 1rem;
+}
+
+.collapseContainer {
+  width: 102.3rem;
+  margin: auto;
+}
+
+.information--collapses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 375.9px) {
+  .information--collapses {
+    flex-direction: column;
+  }
+}
+.information--collapses .collapse .collapse--title {
+  width: 58.2rem;
+}
+@media (max-width: 375.9px) {
+  .information--collapses .collapse .collapse--title {
+    width: 33.5rem;
+  }
+}
+.information--collapses .collapse .collapse--content {
+  width: 58.2rem;
+}
+@media (max-width: 375.9px) {
+  .information--collapses .collapse .collapse--content {
+    width: 33.5rem;
+  }
+}
+.information--collapses .collapse .collapse--content .information--collapse__equipements {
+  list-style: none;
+}
+
+.collapse.open {
+  width: 58.2rem;
+}
+@media (max-width: 375.9px) {
+  .collapse.open {
+    width: 33.5rem;
+  }
+}
+
+.collapse.close {
+  width: 58.2rem;
+}
+@media (max-width: 375.9px) {
+  .collapse.close {
+    width: 33.5rem;
   }
 }/*# sourceMappingURL=main.css.map */

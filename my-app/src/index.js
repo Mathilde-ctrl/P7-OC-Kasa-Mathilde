@@ -8,6 +8,8 @@ import Housing from './pages/Logement';
 import AboutPage from './pages/a-propos';
 import ErrorPage from './pages/erreur';
 
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

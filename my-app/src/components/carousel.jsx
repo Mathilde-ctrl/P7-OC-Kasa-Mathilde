@@ -59,7 +59,7 @@ function Carousel() {
         ))}
       </div>
       {pictures.length > 1 && (
-        <div >
+        <div className='tools' >
           <div className='slideTools'>
             <i onClick={() => changeSlide(-1)}  className='arrow arrow--left'></i>
             <i onClick={() => changeSlide(1)}  className='arrow arrow--right'></i>
