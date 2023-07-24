@@ -1,7 +1,12 @@
+@use './../utilities';
 
 .collapseContainer{
   
   width: 102.3rem ;
   margin: auto;
+
+  @media(max-width: utilities.$query-mobile-value){
+    width: 33.5rem;
+  }
 
 }

@@ -22,15 +22,15 @@ function Carousel() {
   const pictures = advertData.find((advert) => advert.id === id).pictures;
 
   /**
-   * "useState(0)" est un hook qui retourne un tableau avec 2 élements: 
-   * "currentSlideIndex" est une variable avec une valeur initial de 0 pour afficher la première image.
-   * "setCurrentSlideIndex" est une fonction utilisé pour mettre à jour la variable. 
+   * "useState(0)" est un hook qui retourne un tableau avec 2 éléments: 
+   * "currentSlideIndex" est une variable avec une valeur initiale de 0 pour afficher la première image.
+   * "setCurrentSlideIndex" est une fonction utilisée pour mettre à jour la variable. 
    */
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   /**
    * @constant changeSlide - Est une fonction ayant pour paramètre (direction) -1 ou 1 
-   * Permet de défiller les images en cliquant sur les flèches. 
+   * Permet de défiler les images en cliquant sur les flèches. 
    *  
    * @constant nextSlideIndex - Variable qui calcule l'index de la prochaine slide
    * "currentSlideIndex" contient l'index de l'image visible
@@ -38,7 +38,7 @@ function Carousel() {
    * .pictures.length représente la somme totale des images dans []
    * % pictures.length est une opération modulus qui permet d'enchainer les slides en boucles. 
    * 
-   * Exemple dernière slide (currentSlideIndex = 5 + direction = 1 + pictures.length = 5 ) : 11 
+   * Exemple dernier slide (currentSlideIndex = 5 + direction = 1 + pictures.length = 5 ) : 11 
    * 11 %(mod) 5 : 1 
    * Donc retour à la première slide.  
    * 

@@ -60,22 +60,20 @@
     height: 25.5rem;
   }
 
-.carousel--image {
-  position: absolute;
-  opacity: 0;
-}
+  .carousel--image {
+    position: absolute;
+    opacity: 0;
+  }
 
   .carousel--image.visible{
     display: flex;
     width: 124rem;
     height: 41.5rem;
     object-fit:cover;
-    animation-name: fadeInOut;
-    animation-duration: 0.4s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
+    
     opacity: 1;
     border-radius: 2.5rem;
+    animation: fadeInOut 0.4s ease-out;
    
 
     @media(max-width: utilities.$query-mobile-value){
@@ -86,8 +84,9 @@
 }
 
 @keyframes fadeInOut {
-  0%{ opacity: 0.5;} 
-  100% { opacity: 1;} 
+  0%{ opacity: 0.7; scale:98% ;} 
+
+  100% { opacity: 1; scale: 100%;} 
 }
 
 

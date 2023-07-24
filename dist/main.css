@@ -133,11 +133,6 @@
 .welcome--apropos {
   height: 22.3rem;
 }
-@media (max-width: 375.9px) {
-  .welcome--apropos {
-    height: 22.3rem;
-  }
-}
 
 html {
   font-size: 62.5%;
@@ -435,8 +430,7 @@ html {
   margin-top: 0;
   box-sizing: border-box;
   background-color: #F6F6F6;
-  transition: transform 0.25s ease, margin-bottom 0.35s ease-out;
-  transform: scaleY(0);
+  transition: transform 0.2s ease-in, margin-bottom 0.2s ease-out;
   transform-origin: top;
 }
 @media (max-width: 375.9px) {
@@ -454,6 +448,7 @@ html {
 
 .collapse.close .collapse--content {
   margin-bottom: -10px;
+  transform: scaleY(0);
 }
 
 .error {
@@ -545,12 +540,9 @@ html {
   height: 41.5rem;
   -o-object-fit: cover;
      object-fit: cover;
-  animation-name: fadeInOut;
-  animation-duration: 0.4s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
   opacity: 1;
   border-radius: 2.5rem;
+  animation: fadeInOut 0.4s ease-out;
 }
 @media (max-width: 375.9px) {
   .carousel .carousel--image.visible {
@@ -561,10 +553,12 @@ html {
 
 @keyframes fadeInOut {
   0% {
-    opacity: 0.5;
+    opacity: 0.7;
+    scale: 98%;
   }
   100% {
     opacity: 1;
+    scale: 100%;
   }
 }
 .count {
@@ -696,6 +690,11 @@ html {
 .collapseContainer {
   width: 102.3rem;
   margin: auto;
+}
+@media (max-width: 375.9px) {
+  .collapseContainer {
+    width: 33.5rem;
+  }
 }
 
 .information--collapses {

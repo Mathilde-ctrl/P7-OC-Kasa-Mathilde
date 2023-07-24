@@ -1,11 +1,6 @@
 
 
-/**
- * Le composant Banner montre une image et un titre.
- * @component
- * @param {string} imageSource - Permet de choisir différentes source de l'image.
- * @returns {JSX.Element}
- */
+
 function Banner({ imageSource, showTitle, isAProposPage }) {
   const bannerClassName = isAProposPage ? 'welcome welcome--apropos' : 'welcome';
   const imageClassName = isAProposPage ? 'welcome--image welcome--apropos' : 'welcome--image';

@@ -17,11 +17,11 @@ console.log(advertData)
 function Gallery() {
   const covers = advertData.map((advert) => advert.cover);
   const titles = advertData.map((advert) => advert.title);
-
+  const id = advertData.map((advert) => advert.id);
   return (
     <div className='gallery'>
       {covers.map((cover, index) => (
-        <NavLink key={index} to={`/Fiche-Logement/${advertData[index].id}`} className='gallery--card'>
+        <NavLink key={index} to={`/Fiche-Logement/${id[index]}`} className='gallery--card'>
           <img className='gallery--card__image' src={cover} alt={titles[index]} />
           <div className='gallery--card__gradient'></div>
           <h3 className='gallery--card__title'>{titles[index]}</h3>
@@ -32,3 +32,4 @@ function Gallery() {
 }
 
 export default Gallery;
+
