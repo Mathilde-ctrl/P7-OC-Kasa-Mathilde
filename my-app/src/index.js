@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
 import './sass/main.scss';
+import { useParams } from 'react-router-dom';
 
-import Home from './pages/Home';
 import Housing from './pages/Logement';
-import AboutPage from './pages/a-propos';
 import ErrorPage from './pages/erreur';
+
+import Rooter from './rooter';
 
 import advertData from './advert.json';
 
@@ -34,15 +34,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path='/Fiche-Logement/:id' element={<IdToHousingOrError />} />
-        <Route path='/A-Propos' element={<AboutPage />} />
-        <Route path='*' element={<ErrorPage />} />
-      </Routes>
-    </Router>
+    <Rooter />
   </React.StrictMode>
 );
 
+export default IdToHousingOrError
 
