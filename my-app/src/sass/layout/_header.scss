@@ -5,12 +5,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 124rem;
+  width: 95%;
   margin-top: 4rem;
   margin-bottom: 4rem;
 
+
   @media(max-width: utilities.$query-mobile-value){
-    width: 33.5rem;
+    width: 100%;
   }
 
 

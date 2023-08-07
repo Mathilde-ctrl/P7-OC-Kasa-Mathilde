@@ -2,7 +2,7 @@
 
 .information{
   margin-top: 2rem ;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   height: 13rem;
 
   @media(max-width: utilities.$query-mobile-value){
@@ -19,6 +19,10 @@
     .information--title{
       margin-top: 0;
       margin-bottom: 0.7rem;
+      width: 83%;
+      @media(max-width: utilities.$query-mobile-value){
+        width: 100%;
+      }
     }
   
     .information--location{

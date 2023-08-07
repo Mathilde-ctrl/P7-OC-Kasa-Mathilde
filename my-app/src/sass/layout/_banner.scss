@@ -14,14 +14,13 @@
 
   &--image{
     height: 22.3rem;
-    width: 1240px;
+    width: 100%;
     border-radius: 2.5rem;
 
     object-fit: cover;
     position: absolute;
   
     @media(max-width: utilities.$query-mobile-value){
-      width: 33.5rem;
       height: 11.1rem;
       border-radius: 1rem;
       object-position: 0% 55%;
@@ -31,7 +30,7 @@
 
   &--banner{
     height: 22.3rem;
-    width: 1240px; 
+    width: 100%; 
   
     border-radius: 2.5rem;
     background-color: utilities.$neutral-third-color;
@@ -40,7 +39,6 @@
     position: absolute;
 
     @media(max-width: utilities.$query-mobile-value){
-      width: 33.5rem;
       height: 11.1rem;
       border-radius: 1rem;
     }
@@ -49,7 +47,7 @@
 
   &--title{
     height: 22.3rem;
-    width: 1240px; 
+    width: 100%; 
     margin-top: 0;
 
     display: flex;

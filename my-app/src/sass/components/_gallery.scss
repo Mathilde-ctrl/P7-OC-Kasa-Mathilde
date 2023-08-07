@@ -7,16 +7,13 @@
   
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
-
-  width: 1240px;
+  width: 100%;
   padding-bottom: 4.5rem;
 
   @media(max-width: utilities.$query-mobile-value){
-    width: 33.5rem;
     display: flex;
     flex-direction: column;
     background-color: utilities.$neutral-first-color;
-    padding-bottom: 0;
   }
 
   .gallery--card{
@@ -29,10 +26,33 @@
     position: relative;
     cursor: pointer; 
 
-    @media(max-width: utilities.$query-mobile-value){
+
+    @media(max-width: 1100px){
+      width: 27rem;
+      height: 27rem;
+    }
+    
+    @media(max-width: 900px){
+      width: 23rem;
+      height: 23rem;
+    }
+
+    @media(max-width: 768px){
       margin-top: 2rem;
-      width: 33.5rem;
-      height: 33.5rem;
+      width: 100%;
+      height: 30.4rem;
+    }
+
+    @media(max-width: 425px){
+      height: 26.6rem;
+    }
+
+    @media(max-width: 375px){
+      height: 23.1rem;
+    }
+
+    @media(max-width: 320px){
+      height: 23.1rem;
     }
 
 
@@ -43,10 +63,31 @@
       border-radius: 1rem;
       object-fit: cover;  
 
-      @media(max-width: utilities.$query-mobile-value){
-        width: 33.5rem;
-        height: 33.5rem;
+      @media(max-width: 1100px){
+        width: 27rem;
+        height: 27rem;
       }
+      
+      @media(max-width: 900px){
+        width: 23rem;
+        height: 23rem;
+      }
+  
+      @media(max-width: 768px){
+        margin-top: 2rem;
+        width: 100%;
+        height: 30.4rem;
+      }
+  
+      @media(max-width: 425px){
+        height: 26.6rem;
+      }
+  
+      @media(max-width: 375px){
+        height: 23.1rem;
+      }
+  
+      
     }
 
     .gallery--card__gradient{
@@ -60,9 +101,28 @@
       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
       border-radius: 1rem;
 
-      @media(max-width: utilities.$query-mobile-value){
-        width: 33.5rem;
-        height: 33.5rem;
+      @media(max-width: 1100px){
+        width: 27rem;
+        height: 27rem;
+      }
+
+      @media(max-width: 900px){
+        width: 23rem;
+        height: 23rem;
+      }
+
+      @media(max-width: 768px){
+        margin-top: 2rem;
+        width: 100%;
+        height: 30.4rem;
+      }
+  
+      @media(max-width: 425px){
+        height: 26.6rem;
+      }
+  
+      @media(max-width: 375px){
+        height: 23.1rem;
       }
       
     }

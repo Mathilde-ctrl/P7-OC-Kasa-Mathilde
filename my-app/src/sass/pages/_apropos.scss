@@ -2,11 +2,11 @@
 
 .collapseContainer{
   
-  width: 102.3rem ;
+  width: 90%;
   margin: auto;
 
   @media(max-width: utilities.$query-mobile-value){
-    width: 33.5rem;
+    width: 100%;
   }
 
 }

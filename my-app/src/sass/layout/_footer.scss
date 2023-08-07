@@ -6,14 +6,14 @@
   display: flex;
   justify-content: center;
   margin-top: 5rem;
-
+  width: 100%;
   
   @media(max-width: utilities.$query-mobile-value){
     margin-top: 2rem;
   }
 
   .footer--bloc{
-    width: 1440px;
+    width: 100%;
     height: 20.9rem ;
     background-color: utilities.$neutral-third-color;
   
